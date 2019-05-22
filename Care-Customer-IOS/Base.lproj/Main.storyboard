@@ -48,14 +48,70 @@
                     <view key="view" contentMode="scaleToFill" id="w2d-WK-J7j">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.96862745100000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDD-mQ-GkT">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePL-bm-jbv">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="820"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qU0-9x-hjk">
+                                                <rect key="frame" x="20" y="10" width="335" height="800"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="adult OK" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TSN-2B-7yC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="152"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="customized errands" translatesAutoresizingMaskIntoConstraints="NO" id="qa9-Y0-R0f">
+                                                        <rect key="frame" x="0.0" y="162" width="335" height="152"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="152" id="kxZ-lr-oXE"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="companionship" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3UW-gb-9Q6">
+                                                        <rect key="frame" x="0.0" y="324" width="335" height="152"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="personal assistant" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XDx-Xp-7Sj">
+                                                        <rect key="frame" x="0.0" y="486" width="335" height="152"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="light tidying up" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="otv-gR-mzM">
+                                                        <rect key="frame" x="0.0" y="648" width="335" height="152"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="qU0-9x-hjk" secondAttribute="trailing" constant="20" id="2cl-zF-v3g"/>
+                                            <constraint firstAttribute="bottom" secondItem="qU0-9x-hjk" secondAttribute="bottom" constant="10" id="ILI-BW-p79"/>
+                                            <constraint firstItem="qU0-9x-hjk" firstAttribute="top" secondItem="ePL-bm-jbv" secondAttribute="top" constant="10" id="f2R-du-JWN"/>
+                                            <constraint firstItem="qU0-9x-hjk" firstAttribute="leading" secondItem="ePL-bm-jbv" secondAttribute="leading" constant="20" id="hdI-IF-SWL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ePL-bm-jbv" firstAttribute="width" secondItem="ZDD-mQ-GkT" secondAttribute="width" id="1T1-Qv-f7N"/>
+                                    <constraint firstItem="ePL-bm-jbv" firstAttribute="leading" secondItem="ZDD-mQ-GkT" secondAttribute="leading" id="6KZ-wC-kPJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="ePL-bm-jbv" secondAttribute="bottom" id="V2V-Uv-ASi"/>
+                                    <constraint firstItem="ePL-bm-jbv" firstAttribute="top" secondItem="ZDD-mQ-GkT" secondAttribute="top" id="mbf-1L-ale"/>
+                                    <constraint firstAttribute="trailing" secondItem="ePL-bm-jbv" secondAttribute="trailing" id="reW-ho-zy3"/>
+                                    <constraint firstAttribute="height" constant="554" id="uqi-SI-USR"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.92549019607843142" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZDD-mQ-GkT" firstAttribute="top" secondItem="LcK-3a-ZHz" secondAttribute="top" id="3tp-ds-mIe"/>
+                            <constraint firstItem="LcK-3a-ZHz" firstAttribute="bottom" secondItem="ZDD-mQ-GkT" secondAttribute="bottom" id="7gB-06-YGM"/>
+                            <constraint firstItem="LcK-3a-ZHz" firstAttribute="trailing" secondItem="ZDD-mQ-GkT" secondAttribute="trailing" id="qUo-ra-3OG"/>
+                            <constraint firstItem="ZDD-mQ-GkT" firstAttribute="leading" secondItem="LcK-3a-ZHz" secondAttribute="leading" id="ucj-rr-cxJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LcK-3a-ZHz"/>
                     </view>
                     <navigationItem key="navigationItem" id="fQn-1L-6Oi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p0f-L4-oxC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2877.5999999999999" y="-201.04947526236884"/>
+            <point key="canvasLocation" x="2877.5999999999999" y="-342.27886056971516"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SPW-n0-zA3">
@@ -115,6 +171,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="adult OK" width="301.5" height="152"/>
+        <image name="companionship" width="301.5" height="152"/>
+        <image name="customized errands" width="301.5" height="158"/>
         <image name="empty" width="16" height="16"/>
+        <image name="light tidying up" width="301.5" height="152"/>
+        <image name="personal assistant" width="301.5" height="152"/>
     </resources>
 </document>
